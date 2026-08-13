@@ -10,10 +10,6 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" width="100%"/>
-
-<br/>
-
 ## 🚀 À propos de moi
 
 - 🎓 Formation en **mathématiques**, aujourd'hui tourné vers le **développement Full-Stack et Mobile**
@@ -44,51 +40,44 @@
 
 ## 📌 Projets phares
 
-<div align="center">
+<table align="center">
+<tr>
+<td width="50%">
 
-<a href="https://github.com/awougno-kofi-josue/MyPokect">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=awougno-kofi-josue&repo=MyPokect&theme=tokyonight&hide_border=true&bg_color=0D1B1E&title_color=1B998B&text_color=C9D1D9&icon_color=2E86AB" />
-</a>
-<a href="https://github.com/awougno-kofi-josue/Notre_Archive">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=awougno-kofi-josue&repo=Notre_Archive&theme=tokyonight&hide_border=true&bg_color=0D1B1E&title_color=1B998B&text_color=C9D1D9&icon_color=2E86AB" />
-</a>
-<a href="https://github.com/awougno-kofi-josue/Algorithmes">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=awougno-kofi-josue&repo=Algorithmes&theme=tokyonight&hide_border=true&bg_color=0D1B1E&title_color=1B998B&text_color=C9D1D9&icon_color=2E86AB" />
-</a>
-<a href="https://github.com/awougno-kofi-josue/Analyse_sante">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=awougno-kofi-josue&repo=Analyse_sante&theme=tokyonight&hide_border=true&bg_color=0D1B1E&title_color=1B998B&text_color=C9D1D9&icon_color=2E86AB" />
-</a>
+### 📱 [MyPokect](https://github.com/awougno-kofi-josue/MyPokect)
+Application mobile construite avec React Native
 
-</div>
+</td>
+<td width="50%">
 
-<div align="center">
+### 🗂️ [Notre_Archive](https://github.com/awougno-kofi-josue/Notre_Archive)
+Système de gestion d'archives, entièrement bâti sur Laravel
 
-| Projet | Ce qu'il fait |
-|---|---|
-| 📱 [MyPokect](https://github.com/awougno-kofi-josue/MyPokect) | Application mobile construite avec React Native |
-| 🗂️ [Notre_Archive](https://github.com/awougno-kofi-josue/Notre_Archive) | Système de gestion d'archives, entièrement bâti sur Laravel |
-| 🧮 [Algorithmes](https://github.com/awougno-kofi-josue/Algorithmes) | Collection d'algorithmes et de simulations mathématiques |
-| 🐱‍💻 [Chat vs Chien](https://github.com/awougno-kofi-josue/Algorithmes/blob/main/Chat_Chat.ipynb) | Modèle de deep learning entraîné à distinguer chats et chiens sur des images |
-| 🦟 [Paludisme en Afrique](https://github.com/awougno-kofi-josue/Analyse_sante/blob/main/paludisme.ipynb) | Exploration de données de santé publique pour comprendre la propagation du paludisme |
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-</div>
+### 🧮 [Algorithmes](https://github.com/awougno-kofi-josue/Algorithmes)
+Collection d'algorithmes et de simulations mathématiques
 
-<br/>
+</td>
+<td width="50%">
 
-## 📊 Statistiques GitHub
+### 🐱‍💻 [Chat vs Chien](https://github.com/awougno-kofi-josue/Algorithmes/blob/main/Chat_Chat.ipynb)
+Modèle de deep learning entraîné à distinguer chats et chiens sur des images
 
-<div align="center">
+</td>
+</tr>
+<tr>
+<td width="50%" colspan="2">
 
-<img src="https://github-readme-stats.vercel.app/api?username=awougno-kofi-josue&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1B1E&title_color=1B998B&text_color=C9D1D9&icon_color=2E86AB&count_private=true" width="48%"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=awougno-kofi-josue&theme=tokyonight&hide_border=true&background=0D1B1E&ring=1B998B&fire=2E86AB&currStreakLabel=1B998B" width="48%"/>
+### 🦟 [Paludisme en Afrique](https://github.com/awougno-kofi-josue/Analyse_sante/blob/main/paludisme.ipynb)
+Exploration de données de santé publique pour comprendre la propagation du paludisme
 
-<br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=awougno-kofi-josue&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1B1E&title_color=1B998B&text_color=C9D1D9" width="48%"/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=awougno-kofi-josue&theme=react-dark&bg_color=0D1B1E&color=1B998B&line=2E86AB&point=ffffff&hide_border=true" width="100%"/>
-
-</div>
+</td>
+</tr>
+</table>
 
 <br/>
 
@@ -114,8 +103,6 @@
 <br/>
 
 <div align="center">
-
-![Profile Views](https://komarev.com/ghpvc/?username=awougno-kofi-josue&color=1B998B&style=for-the-badge&label=PROFILE+VIEWS)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E86AB,50:1B998B,100:0F9B8E&height=120&section=footer"/>
 
