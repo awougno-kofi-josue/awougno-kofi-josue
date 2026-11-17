@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3200&pause=1000&color=0284C7&center=true&vCenter=true&width=750&lines=MS+in+Mathematics+%40+COMSATS+University+Islamabad;Stabilized+Runge-Kutta+Methods+%26+Computational+Fluid+Dynamics;Full-Stack+Engineering+%3A+FastAPI%2C+React%2C+PostgreSQL%2C+Docker;Bilingual+Mathematics+Educator+(English+%2F+French)" alt="Animated Subtitle" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3200&pause=1000&color=0284C7&center=true&vCenter=true&width=780&lines=MS+in+Mathematics+%40+COMSATS+University+Islamabad;Stabilized+Runge-Kutta+Schemes+%26+Fluid+Mechanics;Mathematical+Epidemiology+%26+Dynamical+Systems;Full-Stack+Engineering+%3A+FastAPI%2C+React%2C+PostgreSQL%2C+Docker" alt="Animated Subtitle" />
 </div>
 
 <p align="center">
@@ -13,22 +13,39 @@
 
 ---
 
-### Research Focus & Mathematical Modeling
+### Publications & Manuscripts in Preparation
 
-My research bridges numerical analysis, stiff ordinary differential equations, and fluid dynamics:
+* **Published — Mathematical Epidemiology:**  
+  *Analytical Threshold and Stability Analysis of an Extended Ross-Macdonald Model for Malaria Transmission: An Illustrative Study Motivated by Togo*  
+  Derivation of the basic reproduction number $\mathcal{R}_0$, equilibrium stability conditions, and bifurcation behavior for vector-borne disease dynamics.
 
-* **Stabilized Explicit Runge–Kutta Schemes (*Kofi–Chebyshev Combination*):** Construction of optimized stage weights and extended stability domains along the negative real axis using shifted Chebyshev polynomials $T_s(w_0 + w_1 z)$ for stiff parabolic PDEs and reaction-diffusion systems.
-* **Computational & Theoretical Fluid Mechanics:** Analytical and numerical investigation of incompressible Navier–Stokes dynamics and laminar Poiseuille flows:
+* **Published — Biofluid Mechanics & Hydrodynamics:**  
+  *How Fast Does an Intravenous Infusion Flow? And How Do Gravity and Fluid Parameters Govern Delivery Rates?*  
+  Analytical modeling of gravity-driven laminar flow in medical infusion systems via the Hagen–Poiseuille relation:
+
+$$Q = \frac{\pi R^4 \Delta P}{8 \mu L}$$
+
+* **Manuscript in Preparation — Numerical Analysis:**  
+  *Kofi–Chebyshev Combination Methods: Optimised Stage Weights for Explicit Stabilised Runge–Kutta Schemes*  
+  Construction of extended real-axis stability domains using shifted Chebyshev polynomials $T_s(w_0 + w_1 z)$ for stiff differential equations and parabolic PDEs ([Official Code Repository](https://github.com/awougno-kofi-josue/KCC-2-Method-s-codes)).
+
+---
+
+### Research Focus & Mathematical Formulation
+
+My mathematical work spans numerical integration, fluid dynamics, and optimization:
+
+* **Incompressible Navier–Stokes & Laminar Flows:** Analytical and numerical study of viscous flow regimes and boundary-value problems:
 
 $$\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} = -\frac{1}{\rho}\nabla p + \nu \nabla^2 \mathbf{u}, \qquad \nabla \cdot \mathbf{u} = 0$$
 
-* **Numerical Optimization & Iterative Solvers:** Algorithmic implementations of the Simplex method, Gradient Descent $x_{k+1} = x_k - \alpha_k \nabla f(x_k)$, and quadratically convergent root-finding schemes.
+* **Numerical Optimization & Solvers:** Algorithmic implementations of linear programming (Simplex), gradient-based optimization $x_{k+1} = x_k - \alpha_k \nabla f(x_k)$, and iterative root-finding methods.
 
 ---
 
 ### Technical Stack
 
-**Scientific Computing & Machine Learning**  
+**Scientific Computing & Artificial Intelligence**  
 ![Python](https://img.shields.io/badge/Python_3.13-0F172A?style=flat-square&logo=python&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-1E3A8A?style=flat-square&logo=numpy&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-0284C7?style=flat-square&logo=scipy&logoColor=white)
@@ -51,11 +68,11 @@ $$\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} =
 | Domain | Repository | Overview |
 | :--- | :--- | :--- |
 | **Numerical Analysis** | [KCC-2-Method-s-codes](https://github.com/awougno-kofi-josue/KCC-2-Method-s-codes) | Official Python implementation and stability benchmarks for Kofi–Chebyshev Combination stabilized Runge–Kutta schemes. |
-| **Optimization** | [numerical-optimization-algorithms](https://github.com/awougno-kofi-josue/numerical-optimization-algorithms) | Implementations of the Simplex algorithm, Gradient Descent, and iterative root-finding methods. |
-| **NLP & Classification** | [TikTok-Claim-vs-Opinion-Classifier](https://github.com/awougno-kofi-josue/TikTok-Claim-vs-Opinion-Classifier) | Machine learning pipeline classifying video transcripts into verifiable claims versus opinions. |
+| **Optimization** | [numerical-optimization-algorithms](https://github.com/awougno-kofi-josue/numerical-optimization-algorithms) | Implementations of the Simplex method, Gradient Descent, and iterative root-finding solvers. |
+| **NLP & Classification** | [TikTok-Claim-vs-Opinion-Classifier](https://github.com/awougno-kofi-josue/TikTok-Claim-vs-Opinion-Classifier) | Natural Language Processing pipeline classifying video transcripts into factual claims versus opinions. |
 | **Deep Learning** | [deep-learning-foundations](https://github.com/awougno-kofi-josue/deep-learning-foundations) | Neural network architectures built from scratch and binary image classification models. |
-| **Full-Stack Systems** | [library-archive-platform](https://github.com/awougno-kofi-josue/library-archive-platform) | Digital library and archive management system, paired with [library-archive-frontend](https://github.com/awougno-kofi-josue/library-archive-frontend). |
-| **Data Science** | [africa-malaria-eda](https://github.com/awougno-kofi-josue/africa-malaria-eda) | Exploratory data analysis and statistical visualization of malaria trends across African countries. |
+| **Epidemiological Data** | [africa-malaria-eda](https://github.com/awougno-kofi-josue/africa-malaria-eda) | Exploratory data analysis and statistical visualization of malaria trends across African countries. |
+| **Full-Stack Systems** | [library-archive-platform](https://github.com/awougno-kofi-josue/library-archive-platform) | Digital library and document archive management platform ([Portfolio](https://github.com/awougno-kofi-josue/Portfolio)). |
 
 ---
 
