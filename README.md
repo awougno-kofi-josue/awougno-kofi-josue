@@ -26,11 +26,11 @@ $$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{V}) = 0$$
 
 * **Conservation of Linear Momentum (Navier-Stokes Equations):**
 
-$$\rho \left( \frac{\partial \mathbf{V}}{\partial t} + (\mathbf{V} \cdot \nabla)\mathbf{V} \right) = -\nabla p + \mu \nabla^2 \mathbf{V} + \mathbf{\rho g}$$
+$$\rho ( \frac{\partial \mathbf{V}}{\partial t} + (\mathbf{V} \cdot \nabla)\mathbf{V} ) = -\nabla p + \mu \nabla^2 \mathbf{V} + \mathbf{\rho g}$$
 
 * **Conservation of Energy:**
 
-$$\rho c_p \left( \frac{\partial T}{\partial t} + \mathbf{V} \cdot \nabla T \right) = k \nabla^2 T + \Phi$$
+$$\rho c_p  \frac{DT}{Dt} = k \nabla^2 T + \tau:L$$
 
 ---
 
@@ -50,8 +50,8 @@ Design of explicit and stabilized Runge-Kutta integrators (from classical 4th-or
 $$y_{n+1} = y_n + \frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)$$
 
 $$\begin{aligned}
-k_1 &= f(t_n, y_n), & k_2 &= f\!\left(t_n + \frac{h}{2}, y_n + \frac{h}{2}k_1\right) \\
-k_3 &= f\!\left(t_n + \frac{h}{2}, y_n + \frac{h}{2}k_2\right), & k_4 &= f(t_n + h, y_n + h k_3)
+k_1 &= f(t_n, y_n),\  & k_2 &= f(t_n + \frac{h}{2}, y_n + \frac{h}{2}k_1) \\
+k_3 &= f(t_n + \frac{h}{2},   y_n + \frac{h}{2}k_2), &  \ k_4 &= f(t_n + h, y_n + h k_3)
 \end{aligned}$$
 
 ---
@@ -106,6 +106,7 @@ k_3 &= f\!\left(t_n + \frac{h}{2}, y_n + \frac{h}{2}k_2\right), & k_4 &= f(t_n +
 ![Docker](https://img.shields.io/badge/Docker-0F172A?style=flat-square&logo=docker&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-1E3A8A?style=flat-square&logo=ubuntu&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-0284C7?style=flat-square&logo=cloudflare&logoColor=white)
+![Azure Virtual Machines](https://img.shields.io/badge/Azure_Virtual_Machines-0F172A?style=flat-square&logo=microsoftazure&logoColor=white)
 
 ---
 
