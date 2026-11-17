@@ -26,7 +26,7 @@ $$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{V}) = 0$$
 
 * **Conservation of Linear Momentum (Navier-Stokes Equations):**
 
-$$\rho \left( \frac{\partial \mathbf{V}}{\partial t} + (\mathbf{V} \cdot \nabla)\mathbf{V} \right) = -\nabla p + \mu \nabla^2 \mathbf{u} + \mathbf{\rho g}$$
+$$\rho \left( \frac{\partial \mathbf{V}}{\partial t} + (\mathbf{V} \cdot \nabla)\mathbf{V} \right) = -\nabla p + \mu \nabla^2 \mathbf{V} + \mathbf{\rho g}$$
 
 * **Conservation of Energy:**
 
