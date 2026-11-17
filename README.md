@@ -22,15 +22,15 @@ Analytical and computational modeling of viscous fluid dynamics governed by the 
 
 * **Conservation of Mass (Continuity Equation):**
 
-$$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{u}) = 0$$
+$$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{V}) = 0$$
 
 * **Conservation of Linear Momentum (Navier-Stokes Equations):**
 
-$$\rho \left( \frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} \right) = -\nabla p + \mu \nabla^2 \mathbf{u} + \mathbf{f}$$
+$$\rho \left( \frac{\partial \mathbf{V}}{\partial t} + (\mathbf{V} \cdot \nabla)\mathbf{V} \right) = -\nabla p + \mu \nabla^2 \mathbf{u} + \mathbf{\rho g}$$
 
 * **Conservation of Energy:**
 
-$$\rho c_p \left( \frac{\partial T}{\partial t} + \mathbf{u} \cdot \nabla T \right) = k \nabla^2 T + \Phi$$
+$$\rho c_p \left( \frac{\partial T}{\partial t} + \mathbf{V} \cdot \nabla T \right) = k \nabla^2 T + \Phi$$
 
 ---
 
