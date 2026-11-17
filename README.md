@@ -13,27 +13,54 @@
 
 ---
 
-### Research Focus & Mathematical Formulation
+### Research Focus & Mathematical Formulations
 
-My research connects physical and biological modeling with scientific computing across three core pillars:
+My research connects physical and biological modeling with high-efficiency numerical solvers across three core pillars:
 
-1. **Fluid Mechanics & Hydrodynamics:** Analytical and computational modeling of viscous, incompressible flows and laminar boundary-value problems governed by the Navier-Stokes equations:
+#### 1. Fluid Mechanics & Conservation Laws
+Analytical and computational modeling of viscous fluid dynamics governed by the three fundamental conservation laws:
 
-$$\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} = -\frac{1}{\rho}\nabla p + \nu \nabla^2 \mathbf{u}, \qquad \nabla \cdot \mathbf{u} = 0$$
+* **Conservation of Mass (Continuity Equation):**
 
-2. **Mathematical Epidemiology:** Formulation of compartmental and vector-borne dynamical systems, derivation of basic reproduction thresholds ($\mathcal{R}_0$), and asymptotic stability analysis of disease-free and endemic equilibria.
+$$\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{u}) = 0$$
 
-3. **Numerical Analysis & Scientific Computing:** Designing high-efficiency explicit stabilized Runge-Kutta schemes and optimization algorithms to solve stiff differential equations arising from fluid and epidemiological models, using shifted Chebyshev polynomials $T_s(w_0 + w_1 z)$.
+* **Conservation of Linear Momentum (Navier-Stokes Equations):**
+
+$$\rho \left( \frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} \right) = -\nabla p + \mu \nabla^2 \mathbf{u} + \mathbf{f}$$
+
+* **Conservation of Energy:**
+
+$$\rho c_p \left( \frac{\partial T}{\partial t} + \mathbf{u} \cdot \nabla T \right) = k \nabla^2 T + \Phi$$
+
+---
+
+#### 2. Mathematical Epidemiology (Ross-Macdonald Dynamics)
+Formulation of vector-borne compartmental dynamical systems, threshold conditions, and asymptotic stability of equilibria:
+
+$$\begin{cases}
+\dfrac{dI_h}{dt} = a b \dfrac{M}{N} I_m (1 - I_h) - r I_h \\
+\dfrac{dI_m}{dt} = a c I_h (1 - I_m) - \mu_m I_m
+\end{cases}, \qquad \mathcal{R}_0 = \frac{m a^2 b c}{r \mu_m}$$
+
+---
+
+#### 3. Numerical Analysis & Runge-Kutta Schemes
+Design of explicit and stabilized Runge-Kutta integrators (from classical 4th-order RK4 to Kofi-Chebyshev Combination schemes) for stiff differential equations $y' = f(t, y)$:
+
+$$y_{n+1} = y_n + \frac{h}{6}(k_1 + 2k_2 + 2k_3 + k_4)$$
+
+$$\begin{aligned}
+k_1 &= f(t_n, y_n), & k_2 &= f\!\left(t_n + \frac{h}{2}, y_n + \frac{h}{2}k_1\right) \\
+k_3 &= f\!\left(t_n + \frac{h}{2}, y_n + \frac{h}{2}k_2\right), & k_4 &= f(t_n + h, y_n + h k_3)
+\end{aligned}$$
 
 ---
 
 ### Publications & Manuscripts
 
 * **Published - Biofluid Mechanics & Hydrodynamics:**  
-  [*How Fast Does an Intravenous Drip Really Flow?*]([https://lnkd.in/p/dZySu7Z8](https://www.linkedin.com/posts/kofi-yosua-awougno-29014a246_how-fast-does-an-intravenous-drip-really-ugcPost-7526374989298728960-I0H3/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADzjtQwBirBldtsdDKYMRFQbV_6JxsTpGwI)) - Kofi Yosua AWOUGNO  
-  Analytical modeling of gravity-driven laminar flow in medical infusion systems via the Hagen-Poiseuille relation:
-
-$$Q = \frac{\pi R^4 \Delta P}{8 \mu L}$$
+  [*How Fast Does an Intravenous Drip Really Flow?*](https://lnkd.in/p/dZySu7Z8) - Kofi Yosua AWOUGNO  
+  Analytical modeling of gravity-driven laminar flow in medical infusion systems via the Hagen-Poiseuille relation $Q = \dfrac{\pi R^4 \Delta P}{8 \mu L}$.
 
 * **Under Review (JMAM) - Mathematical Epidemiology:**  
   *Analytical Threshold and Stability Analysis of an Extended Ross-Macdonald Model for Malaria Transmission: An Illustrative Study Motivated by Togo*  
@@ -41,24 +68,31 @@ $$Q = \frac{\pi R^4 \Delta P}{8 \mu L}$$
 
 * **Manuscript in Preparation - Numerical Analysis:**  
   *Kofi-Chebyshev Combination Methods: Optimised Stage Weights for Explicit Stabilised Runge-Kutta Schemes*  
-  Construction of extended real-axis stability domains for stiff differential equations ([Official Code Repository](https://github.com/awougno-kofi-josue/KCC-2-Method-s-codes)).
+  Construction of extended real-axis stability domains using shifted Chebyshev polynomials $T_s(w_0 + w_1 z)$ ([Official Code Repository](https://github.com/awougno-kofi-josue/KCC-2-Method-s-codes)).
 
 ---
 
 ### Technical Stack
 
-**Programming Languages**  
+**Languages & Markup**  
 ![Python](https://img.shields.io/badge/Python-0F172A?style=flat-square&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-1E3A8A?style=flat-square&logo=javascript&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-0284C7?style=flat-square&logo=php&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-0F172A?style=flat-square&logo=databricks&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-1E3A8A?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-0284C7?style=flat-square&logo=css3&logoColor=white)
 
-**Scientific Computing, Data & BI**  
+**Scientific Computing, Deep Learning & BI**  
 ![NumPy](https://img.shields.io/badge/NumPy-0F172A?style=flat-square&logo=numpy&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-1E3A8A?style=flat-square&logo=scipy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-0284C7?style=flat-square&logo=pandas&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-0F172A?style=flat-square&logo=jupyter&logoColor=white)
-![Excel](https://img.shields.io/badge/Microsoft_Excel-1E3A8A?style=flat-square&logo=microsoftexcel&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-0284C7?style=flat-square&logo=powerbi&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-0F172A?style=flat-square&logo=scikitlearn&logoColor=white)
+![Deep Learning](https://img.shields.io/badge/Deep_Learning_%26_Neural_Networks-1E3A8A?style=flat-square&logo=tensorflow&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-0284C7?style=flat-square&logo=python&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-0F172A?style=flat-square&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-1E3A8A?style=flat-square&logo=jupyter&logoColor=white)
+![Excel](https://img.shields.io/badge/Microsoft_Excel-0284C7?style=flat-square&logo=microsoftexcel&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-0F172A?style=flat-square&logo=powerbi&logoColor=white)
 
 **Backend, Frontend & Databases**  
 ![FastAPI](https://img.shields.io/badge/FastAPI-0F172A?style=flat-square&logo=fastapi&logoColor=white)
@@ -66,6 +100,7 @@ $$Q = \frac{\pi R^4 \Delta P}{8 \mu L}$$
 ![Laravel](https://img.shields.io/badge/Laravel-0284C7?style=flat-square&logo=laravel&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0F172A?style=flat-square&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-1E3A8A?style=flat-square&logo=mysql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-0284C7?style=flat-square&logo=sqlite&logoColor=white)
 
 **Infrastructure & Deployment**  
 ![Docker](https://img.shields.io/badge/Docker-0F172A?style=flat-square&logo=docker&logoColor=white)
@@ -74,16 +109,46 @@ $$Q = \frac{\pi R^4 \Delta P}{8 \mu L}$$
 
 ---
 
-### Selected Repositories
+### Featured Projects
 
-| Domain | Repository | Overview |
-| :--- | :--- | :--- |
-| **Numerical Analysis** | [KCC-2-Method-s-codes](https://github.com/awougno-kofi-josue/KCC-2-Method-s-codes) | Official Python implementation and stability benchmarks for Kofi-Chebyshev Combination stabilized Runge-Kutta schemes. |
-| **Optimization** | [numerical-optimization-algorithms](https://github.com/awougno-kofi-josue/numerical-optimization-algorithms) | Implementations of the Simplex method, Gradient Descent, and iterative root-finding solvers. |
-| **NLP & Classification** | [TikTok-Claim-vs-Opinion-Classifier](https://github.com/awougno-kofi-josue/TikTok-Claim-vs-Opinion-Classifier) | Natural Language Processing pipeline classifying video transcripts into factual claims versus opinions. |
-| **Deep Learning** | [deep-learning-foundations](https://github.com/awougno-kofi-josue/deep-learning-foundations) | Neural network architectures built from scratch and binary image classification models. |
-| **Epidemiological Data** | [africa-malaria-eda](https://github.com/awougno-kofi-josue/africa-malaria-eda) | Exploratory data analysis and statistical visualization of malaria trends across African countries. |
-| **Full-Stack Systems** | [library-archive-platform](https://github.com/awougno-kofi-josue/library-archive-platform) | Digital library and document archive management platform ([Portfolio](https://github.com/awougno-kofi-josue/Portfolio)). |
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/awougno-kofi-josue/KCC-2-Method-s-codes">KCC-2-Method-s-codes</a></strong><br/>
+      <em>Numerical Analysis | Python, NumPy, SciPy</em><br/><br/>
+      Official Python implementation and stability benchmarks for Kofi-Chebyshev Combination explicit stabilized Runge-Kutta schemes applied to stiff ODEs and PDEs.
+    </td>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/awougno-kofi-josue/numerical-optimization-algorithms">numerical-optimization-algorithms</a></strong><br/>
+      <em>Mathematical Optimization | Python, Jupyter</em><br/><br/>
+      Algorithmic implementations of the Simplex method for linear programming, Gradient Descent optimization, and iterative root-finding solvers.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/awougno-kofi-josue/TikTok-Claim-vs-Opinion-Classifier">TikTok-Claim-vs-Opinion-Classifier</a></strong><br/>
+      <em>NLP &amp; Machine Learning | Python, Scikit-Learn</em><br/><br/>
+      End-to-end Natural Language Processing classification pipeline distinguishing verifiable factual claims from subjective opinions in video transcripts.
+    </td>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/awougno-kofi-josue/deep-learning-foundations">deep-learning-foundations</a></strong><br/>
+      <em>Deep Learning | Neural Networks, Python</em><br/><br/>
+      From-scratch neural network architectures and binary image classification pipelines demonstrating forward/backward propagation and gradient updates.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/awougno-kofi-josue/africa-malaria-eda">africa-malaria-eda</a></strong><br/>
+      <em>Epidemiological Data | Pandas, Matplotlib, Seaborn</em><br/><br/>
+      Exploratory data analysis and statistical visualization of malaria incidence and public health indicators across African countries.
+    </td>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/awougno-kofi-josue/library-archive-platform">library-archive-platform</a></strong><br/>
+      <em>Full-Stack Engineering | Laravel, React, SQL</em><br/><br/>
+      Digital library and document archive management system (<a href="https://github.com/awougno-kofi-josue/library-archive-frontend">Frontend Client</a> | <a href="https://kofi-portfolio.pages.dev/">Live Portfolio</a>).
+    </td>
+  </tr>
+</table>
 
 ---
 
